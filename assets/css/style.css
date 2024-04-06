@@ -1,0 +1,236 @@
+/* Fonts */
+/* Catamaran for body */
+/* Averia Sans Libre for headings */
+@import url("https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Catamaran:wght@100..900&display=swap");
+
+/* Overriding default styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* General styles */
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* Generic project styles */
+  color: #0e0e0e;
+  font-family: "Catamaran", sans-serif;
+}
+
+h1 {
+  font-family: "Averia Sans Libre", sans-serif;
+  font-style: italic;
+  font-size: 100%;
+  text-align: center;
+  color: white;
+}
+
+#nav-toggle:checked ~ nav {
+  display: block;
+}
+
+/* Main content */
+main {
+  background-color: #f3f3f3;
+  flex: 1 0 auto;
+}
+
+#hero {
+  background-image: url("images/background.jpeg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 1px 1px #0e0e0e;
+  justify-content: center;
+}
+
+#hero-text > h1 {
+  font-size: 140%;
+  padding-bottom: 10px;
+}
+
+#hero-text > p {
+  font-size: 1.65rem;
+  color: white;
+}
+
+#welcome-header {
+  font-size: 1.8rem;
+}
+#info {
+  font-size: 80%;
+  text-align: center;
+}
+
+#info h2 {
+  margin-top: 10px;
+  font-style: italic;
+  background-color: #f7d1d3;
+  display: inline;
+}
+
+#info p {
+  padding: 10px 0;
+}
+/* Footer */
+#social-networks {
+  background-color: black;
+  text-align: center;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
+
+#social-networks i {
+  color: #f3f3f3;
+  font-size: 150%;
+}
+
+#social-networks i:hover {
+  color: white;
+}
+
+/* Media query: tablets and larger (768px and up) */
+@media screen and (min-width: 768px) {
+  /* Header */
+
+  nav {
+    display: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: black;
+    font-family: "Quicksand", sans-serif;
+    text-decoration: none;
+  }
+
+  .logo {
+    width: 100vw;
+    font-size: x-large;
+  }
+
+  .nav-hyperlinks-container {
+    width: 20vw;
+  }
+
+  .nav-hyperlinks {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #menu {
+    display: flex;
+    font-size: 90%;
+    align-items: center;
+    padding-top: 10px;
+    margin-left: 900px;
+  }
+
+  .nav-toggle-label {
+    display: none;
+  }
+
+  /* Main content */
+
+  #hero {
+    height: 400px;
+  }
+
+  .info-div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 30px;
+  }
+
+  .info-text {
+    flex-basis: 50%;
+    padding: 0px 2%;
+  }
+
+  #info img {
+    width: 270px;
+    height: 270px;
+  }
+
+  #info div {
+    padding-top: 20px;
+  }
+
+  #info p {
+    padding-top: 20px;
+  }
+
+  .who {
+    width: 50vw;
+  }
+
+  .left {
+    order: -1;
+  }
+}
+
+/* Media query: laptops and larger */
+
+@media screen and (min-width: 1024px) {
+  #info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .info-div {
+    display: block;
+  }
+
+  #info img {
+    margin-top: 30px;
+  }
+
+  .info-text {
+    min-height: 251px;
+  }
+
+  /* Connect page */
+  #connect-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #connect-main > div {
+    width: 50%;
+    height: 600px;
+    font-size: 110%;
+  }
+  .image-2 {
+    width: auto;
+    height: auto;
+    border-radius: 50%;
+    border: 2px solid #fcfcfc;
+  }
+  .cafe-image-1 {
+    width: auto;
+    height: auto;
+    border-radius: 50%;
+    border: 2px solid #fcfcfc;
+  }
+}
+.what {
+  width: 50vw;
+}
+
+.benefits {
+  width: 50vw;
+}
+
+.list-opening-times {
+  text-align: left;
+  padding: 15px;
+}
